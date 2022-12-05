@@ -53,5 +53,6 @@ public class MyController {
 
     public void loadHashFiles(ActionEvent actionEvent) throws IOException, NoSuchAlgorithmException, ParserConfigurationException {
         this.hashLabel.setText(appService.getHash(file.getPath()));
+        appService.saveDataToFile(appService.getHash(file.getPath()));
     }
 }

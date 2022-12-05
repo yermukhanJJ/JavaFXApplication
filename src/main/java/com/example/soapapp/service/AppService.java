@@ -55,7 +55,7 @@ public class AppService {
         element.setTextContent(hashcode);
 
         try (FileOutputStream output =
-                     new FileOutputStream("C:\\Users\\User\\Desktop\\javafx-weaver-example-master\\src\\main\\resources\\com\\example\\soapapp\\response.xml")) {
+                     new FileOutputStream("response.xml")) {
             writeXml(doc, output);
         } catch (IOException | TransformerException e) {
             e.printStackTrace();
